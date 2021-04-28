@@ -43,19 +43,17 @@ section h1::before{
     --balMaat:.5em;
     content:"";
     position:absolute;
-    display: block;
     width:var(--balMaat);
     height:var(--balMaat);
 
     background-color: #ffea28;
     border-radius:50%;
     opacity:100%;
-    transition:1s; /* voor de opacity */
-    animation: Tennisbal 5s infinite ease-in;
-    left: 0;
-    top: 0;
+    transition: transform 1s cubic-bezier(0.5, 0, 0.75, 0); /* voor de opacity */
+    animation: Tennisbal 5s infinite;
     z-index: 2;
 }
+
 
 @keyframes Tennisbal{
     0%{
@@ -71,7 +69,7 @@ section h1::before{
 
     45%{
         left: 20%;
-        top: 100%;
+        top: 63%;
         opacity: 100%;
     }
 
@@ -84,7 +82,7 @@ section h1::before{
 
     55%{
         left: 60%;
-        top: 100%;
+        top: 63%;
         opacity: 100%;
     }
 
@@ -96,19 +94,19 @@ section h1::before{
 
     65%{
         left: 90%;
-        top: 100%;
+        top: 63%;
         opacity: 100%;
     }
 
     70%{
-        left: 100%;
+        left: 95%;
         top: 0;
         opacity: 0;
     }
 
     100%{
         left: 0;
-        top: 100%;
+        top: 63%;
         opacity: 0;
     }
 }
