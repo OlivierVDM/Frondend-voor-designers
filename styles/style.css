@@ -14,12 +14,40 @@
   box-sizing:border-box;  
 }
 
+
+/* BRAND STYLING */
+
 body {
     font-family: itc-avant-garde-gothic-pro, sans-serif;
     font-weight: 700;
     font-style: normal;
+    background-color: #eee;
+}
+
+section{
+    word-spacing: -8px;
 }
 
 
-/* BRAND STYLING */
+section h1{
+    background-color: #1882C1;
+    display: inline;
+}
 
+span{
+    color: white;
+    animation: Zichtbaarheid 1s;
+    animation-iteration-count: infinite;
+}
+
+
+@keyframes Zichtbaarheid{
+    0%{
+        opacity: 0;
+        left: 0;
+    }
+    100%{
+        opacity: 1;
+        right: 100%;
+    }
+}
