@@ -14,6 +14,13 @@
   box-sizing:border-box;  
 }
 
+:root {
+    --bl-blauw: #1882C1;
+    --ltr-wit: #fff;
+    --clr-bal: #ffea28;
+}
+
+
 
 /* BRAND STYLING */
 
@@ -22,6 +29,32 @@ body {
     font-weight: 700;
     font-style: normal;
     background-color: #eee;
+    display: flex;
+    justify-content: space-around;
+}
+
+@media (prefers-color-scheme: dark) {
+    :root {
+        --ltr-wit: #1882C1;
+        --bl-blauw: #fff;
+        --clr-bal: #ffea28;
+    }
+}
+
+@media (max-width: 1400px) {
+    body {
+        display: block;
+    }
+}
+
+@media (max-width: 550px) {
+    section h1 {
+        font-size: 13vw !important;
+    }
+
+    h1 {
+        font-size: 5vw;
+    }
 }
 
 section{
@@ -32,7 +65,7 @@ section{
 
 
 section h1{
-    background-color: #1882C1;
+    background-color: var(--bl-blauw);
     display: inline;
     font-size: 5em;
     padding: 0 .2em;
@@ -46,7 +79,7 @@ section h1::before{
     width:var(--balMaat);
     height:var(--balMaat);
 
-    background-color: #ffea28;
+    background-color: var(--clr-bal);
     border-radius:50%;
     opacity:100%;
     transition: transform 1s cubic-bezier(0.5, 0, 0.75, 0); /* voor de opacity */
@@ -112,21 +145,21 @@ section h1::before{
 }
 
 span:nth-of-type(1){
-    color: white;
+    color: var(--ltr-wit);
     animation: Zichtbaarheid ease-in 5s;
     animation-iteration-count: infinite;
     animation-delay: .1s;
 }
 
 span:nth-of-type(2){
-    color: white;
+    color: var(--ltr-wit);
     animation: Zichtbaarheid ease-in 5s;
     animation-iteration-count: infinite;
     animation-delay: .2s;
 }
 
 span:nth-of-type(3){
-    color: white;
+    color: var(--ltr-wit);
     animation: Zichtbaarheid ease-in 5s;
     animation-iteration-count: infinite;
     animation-delay: .3s;
@@ -134,42 +167,42 @@ span:nth-of-type(3){
 
 
 span:nth-of-type(4){
-    color: white;
+    color: var(--ltr-wit);
     animation: Zichtbaarheid ease-in 5s;
     animation-iteration-count: infinite;
     animation-delay: .4s;
 }
 
 span:nth-of-type(5){
-    color: white;
+    color: var(--ltr-wit);
     animation: Zichtbaarheid ease-in 5s;
     animation-iteration-count: infinite;
     animation-delay: .5s;
 }
 
 span:nth-of-type(6){
-    color: white;
+    color: var(--ltr-wit);
     animation: Zichtbaarheid ease-in 5s;
     animation-iteration-count: infinite;
     animation-delay: .6s;
 }
 
 span:nth-of-type(7){
-    color: white;
+    color: var(--ltr-wit);
     animation: Zichtbaarheid ease-in 5s;
     animation-iteration-count: infinite;
     animation-delay: .7s;
 }
 
 span:nth-of-type(8){
-    color: white;
+    color: var(--ltr-wit);
     animation: Zichtbaarheid ease-in 5s;
     animation-iteration-count: infinite;
     animation-delay: .8s;
 }
 
 span:nth-of-type(9){
-    color: white;
+    color: var(--ltr-wit);
     animation: Zichtbaarheid ease-in 5s;
     animation-iteration-count: infinite;
     animation-delay: .9s;
