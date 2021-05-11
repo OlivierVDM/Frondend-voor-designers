@@ -61,6 +61,10 @@ body {
         font-size: 13vw !important;
     }
 
+    section.dropbox{
+        padding: 6vh 2vw !important;
+    }
+
     .dropbox h1{
         white-space: nowrap;
     }
@@ -259,7 +263,7 @@ section.dropbox{
 
 section.dropbox h1{
     background-color: transparent;
-    margin-left: 1.5em;
+    margin-left: 2em;
 }
 
 /*zichtbaarheid2*/
@@ -309,8 +313,8 @@ section.dropbox h1::before{
     background-color: var(--db-logo);
     opacity:100%;
     z-index: 2;
-    left: 80px;
-    top: 60px;
+    left: 14%;
+    top: 30%;
     animation: drop1 3s infinite;
 }
 
@@ -324,8 +328,8 @@ section.dropbox h1::after{
     background-color: var(--db-logo);
     opacity:100%;
     z-index: 2;
-    left: 35px;
-    top: 60px;
+    left: 6%;
+    top: 30%;
     animation: drop2 3s infinite;
 }
 
@@ -339,8 +343,8 @@ section.dropbox h1 span::before{
     background-color: var(--db-logo);
     opacity:100%;
     z-index: 2;
-    left: 80px;
-    top: 105px;
+    left: 14%;
+    top: 53%;
     animation: drop3 3s infinite;
 }
 
@@ -354,8 +358,8 @@ section.dropbox h1 span::after{
     background-color: var(--db-logo);
     opacity:100%;
     z-index: 2;
-    left: 35px;
-    top: 105px;
+    left: 6%;
+    top: 53%;
     animation: drop4 3s infinite;
 }
 
@@ -368,8 +372,8 @@ section.dropbox h1 span.extra::after{
     background-color: var(--db-logo);
     opacity:100%;
     z-index: 2;
-    left: 58px;
-    top: 138px;
+    left: 10%;
+    top: 70%;
     transform: rotate(45deg);
     animation: drop5 3s infinite;
 }
@@ -396,8 +400,8 @@ section.dropbox h1 span.extra::after{
         animation-timing-function: ease-in-out;
     }
     60%{
-        left: 58px;
-        top: 138px;
+        left: 10%;
+        top: 70%;
     }
 }
 
@@ -423,8 +427,8 @@ section.dropbox h1 span.extra::after{
         animation-timing-function: ease-in-out;
     }
     60%{
-        left: 35px;
-        top: 105px;
+        left: 6%;
+        top: 53%;
     }
 }
 
@@ -450,8 +454,8 @@ section.dropbox h1 span.extra::after{
         animation-timing-function: ease-in-out;
     }
     60%{
-        left: 80px;
-        top: 105px;
+        left: 14%;
+        top: 53%;
     }
 }
 
@@ -477,8 +481,8 @@ section.dropbox h1 span.extra::after{
         animation-timing-function: ease-in-out;
     }
     60%{
-        left: 35px;
-        top: 60px;
+        left: 6%;
+        top: 30%;
     }
 }
 
@@ -504,8 +508,8 @@ section.dropbox h1 span.extra::after{
         animation-timing-function: ease-in-out;
     }
     60%{
-        left: 80px;
-        top: 60px;
+        left: 14%;
+        top: 30%;
     }
 }
 
